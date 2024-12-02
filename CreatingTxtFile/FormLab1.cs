@@ -17,13 +17,15 @@ namespace CreatingTxtFile
             string getInput = txtInput1.Text;
 
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            string testingWaters;
             
             using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, FrmFileName.SetFileName)))
             {
                 outputFile.WriteLine(getInput);
                 Console.WriteLine(getInput);
             }
-            
+            //testing
 
             //FrmRegistration frmRegistration = new FrmRegistration();
             //frmRegistration.ShowDialog();
